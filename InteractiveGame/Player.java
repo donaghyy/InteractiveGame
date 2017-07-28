@@ -32,6 +32,7 @@ public class Player {
 		if(p1.getNoOfLifes()<1) {
 			System.out.println("\nYOU ARE DEAD!");
 			System.out.println("GAME OVER " +"\nUnlucky "+ p1.getPlayerName()+", better luck next time");
+			System.exit(0);
 			r = "true";
 		}
 		else {
