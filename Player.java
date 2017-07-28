@@ -3,16 +3,33 @@ package InteractiveGame;
 public class Player {
 	
 	private String playerName;
-	private int noOfDeaths;
+	
+	private int noOfLifes;
 	private int xVal;
 	private int yVal;
+	private String direction;
 	
 	
+	public String getDirection() {
+		return direction;
+	}
+
+
+	public void setDirection(String direction) {
+		this.direction = direction;
+	}
+
+
 	public Player(String playerName, int noOfDeaths, int xVal, int yVal) {
 		this.playerName = playerName;
-		this.noOfDeaths = noOfDeaths;
+		this.noOfLifes = noOfDeaths;
 		this.xVal = xVal;
 		this.yVal = yVal;
+	}
+
+
+	public Player() {
+		
 	}
 
 
@@ -26,13 +43,14 @@ public class Player {
 	}
 
 
-	public int getNoOfDeaths() {
-		return noOfDeaths;
+
+	public int getNoOfLifes() {
+		return noOfLifes;
 	}
 
 
-	public void setNoOfDeaths(int noOfDeaths) {
-		this.noOfDeaths = noOfDeaths;
+	public void setNoOfLifes(int noOfLifes) {
+		this.noOfLifes = noOfLifes;
 	}
 
 

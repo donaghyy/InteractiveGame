@@ -9,7 +9,21 @@ public class Main {
 
 	}
 	
+	public void getPlayerDetails() {
+		Player p1 = new Player();
+		System.out.println("Hello Warrior, what shall thou refer to you as throughout this Quest?");
+		String name = "";
+		name = getInput(name);
+		
+		p1.setPlayerName(name);
+		p1.setNoOfLifes(1);
+		p1.setxVal(0);
+		p1.setyVal(0);
+	}
 	
+	public void requestDirection() {
+		
+	}
 	
 	public String getInput(String input) {
 		Scanner sc = new Scanner(System.in);
